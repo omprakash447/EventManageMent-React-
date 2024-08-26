@@ -1,0 +1,121 @@
+/* Filterevent.css */
+
+
+/* General Styling */
+
+.filter {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.inputs button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAFC0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputs button:hover {
+    background-color: #3A99A8;
+}
+
+.event-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.event-item {
+    background-color: #FCEFEF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(100% - 40px);
+    /* Full width minus padding */
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.event-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.event-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .inputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .inputs input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .event-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter {
+        padding: 10px;
+    }
+    .inputs button {
+        width: 100%;
+    }
+    .event-item h3 {
+        font-size: 1.25rem;
+    }
+    .event-item p {
+        font-size: 0.9rem;
+    }
+}

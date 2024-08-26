@@ -1,0 +1,147 @@
+/* Sidebar Styles */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #FCEFEF;
+    color: #2E2532;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    transition: width 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.sidebar li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #E0B0FF;
+}
+
+.sidebar a {
+    color: #2E2532;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #6D28D9;
+}
+
+.sidebar a.active {
+    color: #FFF;
+    background-color: #6D28D9;
+}
+
+
+/* Event List Styles */
+
+.eventlist {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+    .eventlist {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+    .eventlist {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    .eventlist {
+        margin-left: 0;
+    }
+}
+
+
+/* Fetch Section Styles */
+
+.fetch {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.items img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.items h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.items p {
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.items button {
+    background-color: #383896;
+    color: #FFF;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.items button:hover {
+    background-color: #2A2E8E;
+}

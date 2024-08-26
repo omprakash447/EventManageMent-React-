@@ -1,0 +1,187 @@
+/* Footer Container */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+
+/* Footer Section */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+
+/* Section Titles */
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+/* About Section */
+
+.footer-section.about p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #ff4081;
+}
+
+
+/* Links Section */
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: #ff4081;
+}
+
+
+/* Contact Section */
+
+.footer-section.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.contact ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-section.contact ul li i {
+    margin-right: 10px;
+    color: #ff4081;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    background-color: #222;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom p a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin: 10px 0;
+        min-width: 100%;
+    }
+    .footer-section h2 {
+        font-size: 16px;
+    }
+    .footer-section p,
+    .footer-section ul li {
+        font-size: 13px;
+    }
+    .social-icons li {
+        margin-right: 5px;
+    }
+    .social-icons li a {
+        font-size: 18px;
+    }
+}
+
+
+/* Small devices (phones, 576px and down) */
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 0;
+    }
+    .footer-section h2 {
+        font-size: 14px;
+    }
+    .footer-section p,
+    .footer-section ul li {
+        font-size: 12px;
+    }
+    .social-icons li a {
+        font-size: 16px;
+    }
+    .footer-bottom {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}
